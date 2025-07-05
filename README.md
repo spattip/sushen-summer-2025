@@ -5,7 +5,7 @@ This project is a command-line Python tool that analyzes the sentiment of text i
 - User-interactive menu system to select text analysis options  
 - Sentiment analysis using TextBlob (polarity and subjectivity)  
 - Modular Python functions for clean code organization  
-- (Planned) Logging of analysis results to SQLite database
+- Logging of analysis results to SQLite database
 
 ## Tools & Technologies  
 - Python 3.x  
