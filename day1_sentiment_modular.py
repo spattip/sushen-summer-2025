@@ -1,11 +1,18 @@
 from logging_utils import setup_db, log_to_db
 from sentiment_utils import analyze_sentiment
 
+def log_to_file(text, polarity, subjectivity):
+    with open("sentiment_log.txt", "a") as file:
+        file.write(f"Text: {text}\n")
+        file.write(f"Polarity: {polarity}, Subjectivity: {subjectivity}\n")
+        file.write("---\n")
+
+
 def main():
     setup_db()  
 
     while True:
-        print("\nMenu:")
+        print("Menu:")
         print("1. Analyze a sentence and log result")
         print("2. Exit")
 
@@ -14,10 +21,11 @@ def main():
         if choice == '1':
             text = input("Enter a sentence: ")
             polarity, subjectivity = analyze_sentiment(text)
-            print(f"Polarity: {polarity}, Subjectivity: {subjectivity}")
+            print("Polarity:", polarity, " Subjectivity:", subjectivity)
 
             
             log_to_db(text, polarity, subjectivity)
+            log_to_file(text, polarity, subjectivity)
             print("Logged to database!")
 
         elif choice == '2':
