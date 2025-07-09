@@ -1,3 +1,6 @@
 Text: Hi there, hope you are having a good day!
 Polarity: 0.875, Subjectivity: 0.6000000000000001
 ---
+Text: Hey there
+Polarity: 0.0, Subjectivity: 0.0
+---
