@@ -4,3 +4,9 @@ Polarity: 0.875, Subjectivity: 0.6000000000000001
 Text: Hey there
 Polarity: 0.0, Subjectivity: 0.0
 ---
+Text: Hi how are you?
+Polarity: 0.0, Subjectivity: 0.0
+---
+Text: Have a great day
+Polarity: 0.8, Subjectivity: 0.75
+---
